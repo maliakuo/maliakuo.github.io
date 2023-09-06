@@ -1,16 +1,23 @@
 <html>
 
 <head>
+  <title>Malia Kuo</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&family=Source+Sans+3:wght@500&family=Space+Mono&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@500&family=Space+Mono&display=swap" rel="stylesheet">
 </head>
  
 <body>
   <div class="navbar">
-    <p>Home</p>
-    <p>Projects</p>
-    <p>Art</p>
+    <a href="#home_section">Home</a>
+    <a href="#project_section">Projects</a>
+    <a href="#art_section">Art</a>
   </div>
-  <div class="container">
+  <div id="home_section" class="container">
     <div class="background">
       <div class="content_container">
         <div class="img_container">
@@ -18,15 +25,56 @@
         </div>
         <div class="paragraph_container">
           <h1>Hi!</h1>
-          <p>I’m Malia Kuo and I’m currently studying Computer Science and Studio Art at Yale University. I’m passionate about the intersection between art and technology, in spaces such as augmented and virtual realities, graphic design, illustration, web development, and computer graphics. </p>
-          <p>Prev. at Walt Disney Animation Studios as a frontend engineering intern :) Check out my linkedin for more of my experiences!</p>
+          <p>I’m Malia Kuo and I’m currently studying Computer Science and Studio Art at Yale. I’m passionate about the intersection between art and technology, in spaces such as augmented and virtual realities, graphic design, illustration, web development, and computer graphics. </p>
+          <p>Prev. at Walt Disney Animation Studios as a frontend engineering intern :) Check out my <a href="https://www.linkedin.com/in/maliakuo/" target="_blank">Linkedin</a> for more of my experiences!</p>
         </div>
       </div>
     </div>
+    <p>scroll to see some projects and art!</p>
   </div>
-  <!-- <h1>Malia</h1>
-  <p>Welcome to my website!</p>
-  <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" /> -->
+
+  <div id="project_section" class="project_header">
+    <div class="project_title">
+      <img src="Folder-speedy.png">
+      <h1>Projects</h1>
+    </div>
+    <p><i>some fun technical projects</i></p>
+    <h2>AR/VR</h2>
+    <div class="page_links">
+      <div class="cursor_container">
+        <img class="cursor" src="cursor.png">
+      </div>
+      <a href="arvr.html">Click to check out my exploration into augmented reality and 3D Modeling</a>
+    </div>
+    <h2>Creative Embedded Systems</h2>
+    <div class="page_links">
+      <div class="cursor_container">
+        <img class="cursor" src="cursor.png">
+      </div>
+      <a>will update once i have projects from this class this sem!</a>
+    </div>
+    <h2>Computer Graphics</h2>
+    <div class="page_links">
+      <div class="cursor_container">
+        <img class="cursor" src="cursor.png">
+      </div>
+      <a>will update once i have projects from this class this sem!</a>
+    </div>
+  </div>
+
+  <div id="art_section" class="project_header">
+    <div class="project_title">
+      <img src="Folder-speedy.png">
+      <h1>Art</h1>
+    </div>
+    <p><i>digital, collage, animation, and more</i></p>
+    <div class="page_links">
+      <div class="cursor_container">
+        <img class="cursor" src="cursor.png">
+      </div>
+      <a href="art.html">Click here to view my art portfolio</a>
+    </div>
+  </div>
 </body>
  
 </html>
