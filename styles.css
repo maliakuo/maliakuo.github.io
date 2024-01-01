@@ -1,145 +1,25 @@
-p {
-    font-size: 1.5rem;
-    font-family: 'Source Code Pro', monospace;
-}
-
-a {
-    font-size: 1.5rem;
+* {
+    font-size: 1rem;
     color: black;
-    font-family: 'Source Code Pro', monospace;
-    text-decoration: none;
-
-    &:hover {
-        text-decoration: underline;
-    }
+    font-family: "source-code-pro", monospace;
+    font-weight: 400;
+    font-style: normal;
+   }
+   
+.heading {
+    font-size: 3.5rem;
 }
 
-button {
-    font-family: 'Source Code Pro', monospace;
-    border-radius: 0.5rem;
-    font-size: 1.5rem;
-    border: none;
-    cursor: pointer;
-    background-color: aliceblue;
-    padding: .25rem;
-    &:hover {
-        color: #0077b5;
-        font-family: 'Source Sans 3', sans-serif;
-    }
+.subheading {
+    font-style: italic;
 }
 
-.navbar {
-    display: flex;
-    width: 100%;
-    justify-content: flex-end;
-    gap: 50px;
-}
-
-.navbar a {
-    padding-top: 1.5rem;
-}
-
-.navbar a:hover {
-    cursor: pointer;
-    text-decoration: underline;
-}
-
-.container {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.background {
-    border-radius: 2rem;
-    margin-top: 3rem;
-    min-width: 900px;
-    width: 1250px;
-    height: 600px;
-    background-image: url(fullbg.PNG);
-    background-size: 1300px 757px;
-}
-
-.content_container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-.img_container {
-    display: inline-block;
-    padding-left: 2rem;
+.section_div {
     padding-top: 1rem;
-    height: 600px;
-    min-width: 500px;
+    padding-bottom: 1rem;
+    border-top: 1px dotted black;
 }
 
-.paragraph_container {
-    display: flex;
-    flex-direction: column;
-    padding-right: 3rem;
-}
-
-.project_header {
-    margin-top: 4rem;
-    margin-left: 7rem;
-    display: flex;
-    flex-direction: column;
-    font-family: 'Source Code Pro', monospace;
-}
-
-.project_title {
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-} 
-
-
-.cursor_container {
-    display: inline-block;
-    height: 1.5rem;
-    min-width: 1.5rem;
-    margin-left: 4rem;
-}
-
-.cursor {
-    max-width: 100%; 
-    max-height: 100%; 
-}
-
-.page_links {
-    display: flex;
-    align-items: center;
-}
-
-.page_links a {
-    font-size: 1rem;
-}
-
-.arvr *{
-    font-family: 'Source Code Pro', monospace;
-}
-
-.arvr p {
-    font-size: 1rem;
-}
-
-.page_header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.art {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-#profile {
-    max-width: 100%; 
-    max-height: 100%; 
+.side_div {
+    border-right: 1px dotted black;
 }
