@@ -1,0 +1,112 @@
+body {
+    font-family: "bookmania", serif;
+}
+
+a {
+    border: dotted;
+    text-decoration: none;
+    padding: 0.5em;
+    color: black;
+}
+
+a:hover {
+    background-color: gold;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 30%;
+    border: dotted;
+    padding: 1em;
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+}
+
+.card:hover {
+    filter: blur(0px);
+}
+
+.header {
+    border-bottom: dotted;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page_nav {
+    display: flex;
+    justify-content: space-between;
+    font-family: "source-code-pro", monospace; 
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+
+#mc1 {
+    color: rgb(0, 136, 255);
+    position: absolute;
+    margin-left: 20vh;
+}
+
+#mc2 {
+    color: rgb(234, 89, 89);
+    position: absolute;
+    margin-top: 20vh;
+    margin-left: 50vw;
+    width: 40%;
+}
+
+#mc3 {
+    color: rgb(52, 138, 52);
+    position: absolute;
+    margin-top: 110vh;
+    margin-left: 5vw;
+    width: 30%;
+}
+
+#mc4 {
+    color: rgb(199, 117, 69);
+    position: absolute;
+    margin-top: 160vh;
+    margin-left: 55vw;
+    width: 30%;
+}
+
+#mc5 {
+    color: rgb(207, 106, 185);
+    position: absolute;
+    margin-top: 240vh;
+    margin-left: 10vw;
+    width: 30%;
+}
+
+@media only screen and (max-width: 1000px){
+    #mc1, #mc2, #mc3, #mc4, #mc5 {
+        width: 90%;
+        position: static;
+        margin-left: 0vh;
+        margin-top: 0vw; 
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .card {
+        filter: blur(0px);
+    }
+
+    #mc1, #mc2, #mc3, #mc4, #mc5 {
+        width: 90%;
+        position: static;
+        margin-left: 0vh;
+        margin-top: 0vw; 
+    }
+}

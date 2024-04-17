@@ -1,0 +1,99 @@
+body {
+    cursor: url("images/scissor.png"), auto;
+    background-image: url("../images/crumpled.jpeg");
+    font-family: Georgia, 'Times New Roman', Times, serif
+
+}
+
+a {
+    border: dotted;
+    text-decoration: none;
+    padding: 0.5em;
+    color: black;
+}
+
+a:hover {
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+input {
+    border: dotted;
+}
+
+input:hover {
+    background-color: pink;
+}
+
+.container {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.nytByline {
+    display: flex;
+    justify-content: space-between;
+    border-top: double;
+    border-bottom: 1px solid black;
+    margin-bottom: 1em;
+}
+
+.nytContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nytHeader {
+    font-family: "cabazon", serif;
+    font-size: 4em;
+    margin:none;
+}
+
+.title_container {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    text-align: left;
+}
+
+.horiz_container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: left;
+    justify-content: center;
+}
+
+.button_container {
+    flex: 20%;  
+    padding: 2rem;  
+}
+
+.text_container {
+    flex: 70%;
+    padding: 2rem; 
+}
+
+.page_nav {
+    display: flex;
+    justify-content: space-between;
+    font-family: "source-code-pro", monospace; 
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+#snip {
+    cursor: pointer;
+    font-size: xx-large;
+}
+
+#haircut_fin {
+    font-size: xx-large;
+}

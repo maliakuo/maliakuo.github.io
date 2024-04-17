@@ -1,0 +1,76 @@
+* {
+    font-size: 2em;
+    font-family: "franklin-gothic-urw", sans-serif;
+    background-color: rgb(0, 0, 255);
+    color: rgb(255, 255, 0);
+}
+
+.page_nav a {
+  border: dotted;
+  text-decoration: none;
+  padding: 0.5em;
+  color: yellow;
+}
+
+
+.page_nav a:hover {
+  background-color: yellow;
+  color: blue;
+
+}
+
+.credits {
+    font-size: 0.25em;
+    margin-bottom: 5em;
+}
+
+.marquee {
+    width: 95%;
+    border-top: 1px solid yellow;
+    border-bottom: 1px solid yellow;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    padding: 1em;
+  }
+
+.marquee span {
+    display: inline-block;
+    animation: marquee 10s linear infinite;
+}
+
+.page_nav {
+  display: flex;
+  justify-content: space-between;
+  font-family: "source-code-pro", monospace; 
+  position: fixed;
+  font-size: 0.1em;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+
+
+/* 
+  .bounce {
+    width: 100%;
+    border: 1px solid rgb(34, 146, 226);
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .bounce span {
+    display: inline-block;
+    animation: marquee 3s linear infinite alternate;
+  } */
+
+  @keyframes marquee {
+    0% {
+      transform: translateX(100vw);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }

@@ -1,0 +1,49 @@
+body {
+    background-image:
+        linear-gradient(black, black),
+        url("../images/butterflygif.gif");
+    background-size: cover;
+    background-blend-mode: saturation;
+    /* background-image: url("../images/butterflygif.gif"); */
+    color: white;
+}
+
+a {
+    border: dotted;
+    text-decoration: none;
+    padding: 0.5em;
+    color: white;
+}
+
+a:hover {
+    background-color: white;
+    color: black;
+
+}
+
+.video {
+    height: 0;
+    width: 0;
+}
+
+.lyrics_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5em;
+}
+
+.footer {
+    color: black;
+}
+
+.page_nav {
+    display: flex;
+    justify-content: space-between;
+    font-family: "source-code-pro", monospace; 
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}

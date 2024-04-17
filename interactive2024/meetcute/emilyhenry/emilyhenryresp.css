@@ -1,0 +1,157 @@
+main {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+
+main > section {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+}
+
+button {
+    border: none;
+    padding: 1em;
+    background-color: white;
+    border: dotted;
+    cursor: pointer;
+
+}
+
+button:hover {
+    background-color: rgb(255, 199, 209);
+}
+
+a {
+    border: dotted;
+    text-decoration: none;
+    padding: 0.5em;
+    color: black;
+}
+
+a:hover {
+    background-color: gold;
+}
+
+.title_page {
+    /* flex-grow: 2; */
+    display: none;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.beachReadTitleFont {
+    font-family: "chorine-large", sans-serif;
+    font-size: 3em;
+}
+
+#beachReadTitle {
+    background: rgb(255,89,26);
+    background: radial-gradient(circle, rgba(255,89,26,1) 0%, rgba(252,195,59,1) 51%, rgba(241,255,240,1) 100%);
+    color: white;
+}
+
+#bookLoversTitle {
+    background: rgb(0,84,255);
+    background: radial-gradient(circle, rgba(0,84,255,1) 0%, rgba(0,230,255,1) 79%, rgba(255,247,239,1) 100%);
+    color: white;
+}
+
+.spine {
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3em;
+}
+
+#beachReadSpine {
+    /* background-color: rgb(20, 87, 211); */
+    background: rgb(26,28,255);
+    background: radial-gradient(circle, rgba(26,28,255,1) 0%, rgba(252,122,59,1) 100%, rgba(26,28,255,1) 100%);
+    color: white;
+}
+
+#bookLoversSpine {
+    background: rgb(255,117,0);
+    background: radial-gradient(circle, rgba(255,117,0,1) 0%, rgba(0,187,255,1) 100%, rgba(255,247,239,1) 100%);
+    color: white;
+}
+
+.blurb {
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 2em;
+    padding-right: 2em;
+    align-items: left;
+    justify-content: center;
+    overflow: scroll;
+}
+
+#beachReadBlurb {
+    background: rgb(255,89,26);
+    background: radial-gradient(circle, rgba(255,89,26,1) 0%, rgba(252,195,59,1) 51%, rgba(241,255,240,1) 100%);
+    font-family: Arial, sans-serif;
+    color: white;
+
+}
+
+#bookLoversBlurb {
+    background: rgb(0,84,255);
+    background: radial-gradient(circle, rgba(0,84,255,1) 0%, rgba(0,230,255,1) 79%, rgba(255,247,239,1) 100%);
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+.content {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    display: none;
+    font-size: 1.5rem;
+    margin: 2rem;
+    overflow: scroll;
+}
+
+.page_nav {
+    display: flex;
+    justify-content: space-between;
+    font-family: "source-code-pro", monospace; 
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+
+@media only screen and (min-width: 768px){
+    main > section {
+        flex-direction: row;
+    }
+    .title_page {
+        display: flex;
+        width: 45%;
+        height: 100%;
+    }
+
+    .spine {
+        writing-mode: vertical-rl;
+        height: 100%;
+        width: 10%;
+    }
+
+    .blurb {
+        height: 100%;
+        width: 45%;
+    }
+}
