@@ -15,8 +15,8 @@ fieldset {
 }
 
 img{
-  max-width: 25%;
-  max-height: 25%
+  max-width: 50%;
+  max-height: 50%
 }
 
 
@@ -54,17 +54,17 @@ button {
 
 .message {
   display: none;
+  background: black;
 }
 
 .wish {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
+  height: 20vh;
+  width: 20vh;
 }
 
 .wish:hover > .message {
   display: block;
+  background-color: black;
 }
 
 .color {
