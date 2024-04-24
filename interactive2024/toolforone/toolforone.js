@@ -1,12 +1,14 @@
 const compassCircle = document.querySelector(".compass-circle");
 const myPoint = document.querySelector(".my-point");
 const startBtn = document.querySelector(".start-btn");
+
 const isIOS =
   navigator.userAgent.match(/(iPod|iPhone|iPad)/) &&
   navigator.userAgent.match(/AppleWebKit/);
 
 function init() {
   startBtn.addEventListener("click", startCompass);
+  // startCompass();
   navigator.geolocation.getCurrentPosition(locationHandler);
 
   if (!isIOS) {
@@ -47,20 +49,25 @@ function handler(e) {
 
 let pointDegree;
 
+let longitude;
+let latitude;
+
 function locationHandler(position) {
-  const { latitude, longitude } = position.coords;
-  pointDegree = calcDegreeToPoint(latitude, longitude);
+  latitude = position.coords.latitude;
+  longitude = position.coords.longitude;
+  // const { latitude, longitude } = position.coords;
+  pointDegree = calcDegreeToPoint(latitude, longitude, 41.309260, -72.923250);
 
   if (pointDegree < 0) {
     pointDegree = pointDegree + 360;
   }
 }
 
-function calcDegreeToPoint(latitude, longitude) {
+function calcDegreeToPoint(latitude, longitude, dest_lat, dest_long) {
   // 227 church st location
   const point = {
-    lat: 41.309260,
-    lng: -72.923250
+    lat: dest_lat,
+    lng: dest_long
   };
 
   const phiK = (point.lat * Math.PI) / 180.0;
@@ -76,5 +83,89 @@ function calcDegreeToPoint(latitude, longitude) {
     );
   return Math.round(psi);
 }
+
+let form = document.forms['address_select'];
+let menu = form.addresses;
+let addresses = form.addresses.options;
+
+menu.onchange = function() {
+  let optionValue = this.value;
+  switch(optionValue) {
+    case "japan":
+      pointDegree = calcDegreeToPoint(latitude, longitude, 42.76308, 141.77158);
+      console.log("eli");
+      if (pointDegree < 0) {
+        pointDegree = pointDegree + 360;
+      }
+      console.log(pointDegree);
+      break;
+    case "ky1":
+      // locationHandler(position, 38.166490, -84.233330);
+      pointDegree = calcDegreeToPoint(latitude, longitude, 38.166490, -84.233330);
+      console.log("ky1");
+      if (pointDegree < 0) {
+        pointDegree = pointDegree + 360;
+      }
+      console.log(pointDegree);
+      break;
+    case "ky2":
+      // locationHandler(position, 38.166490, -84.233330);
+      pointDegree = calcDegreeToPoint(latitude, longitude, 38.15528, -84.45570);
+      console.log("ky2");
+      if (pointDegree < 0) {
+        pointDegree = pointDegree + 360;
+      }
+      console.log(pointDegree);
+      break;
+    case "anguilla":
+      // locationHandler(position, 38.166490, -84.233330);
+      pointDegree = calcDegreeToPoint(latitude, longitude, 18.184936, -63.135627);
+      console.log("anguilla");
+      if (pointDegree < 0) {
+        pointDegree = pointDegree + 360;
+      }
+      console.log(pointDegree);
+      break;
+
+    case "jordan":
+      // locationHandler(position, 38.166490, -84.233330);
+      pointDegree = calcDegreeToPoint(latitude, longitude, 31.751629, 35.846775);
+      console.log("jordan");
+      if (pointDegree < 0) {
+        pointDegree = pointDegree + 360;
+      }
+      console.log(pointDegree);
+      break;
+
+    case "cali":
+      // locationHandler(position, 38.166490, -84.233330);
+      pointDegree = calcDegreeToPoint(latitude, longitude, 34.066167, -118.394131);
+      console.log("cali");
+      if (pointDegree < 0) {
+        pointDegree = pointDegree + 360;
+      }
+      console.log(pointDegree);
+      break;
+    case "eli":
+      pointDegree = calcDegreeToPoint(latitude, longitude, 41.309260, -72.923250);
+      console.log("eli");
+      if (pointDegree < 0) {
+        pointDegree = pointDegree + 360;
+      }
+      console.log(pointDegree);
+      break;
+    case "la":
+      // locationHandler(position, 38.166490, -84.233330);
+      pointDegree = calcDegreeToPoint(latitude, longitude, 34.068314, -118.426081);
+      console.log("la");
+      if (pointDegree < 0) {
+        pointDegree = pointDegree + 360;
+      }
+      console.log(pointDegree);
+      break;
+  }
+}
+
+
 
 init();
