@@ -145,3 +145,7 @@ select {
   background-image: url("images/pixelstar.png");
   transition: opacity 0.5s ease-out;
 }
+
+#mobile {
+  font-size: 0.6em;
+}
