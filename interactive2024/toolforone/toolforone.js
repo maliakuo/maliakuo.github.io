@@ -28,6 +28,7 @@ function startCompass() {
       })
       .catch(() => alert("not supported"));
   }
+
 }
 
 function handler(e) {
