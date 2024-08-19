@@ -1,5 +1,17 @@
 var AppScriptUrl = 'https://script.google.com/macros/s/AKfycbwwXIGpUfOa2_TFxfJSbbHUkc6tKLd1f3hmdhTc_cw_v4a6Nm_O5UYO40RyvoC89HNRfA/exec';
 
+function generateUniqueId() {
+  return 'content-' + Math.random().toString(36).substr(2, 9);
+}
+
+function createContentDiv(content, id) {
+  const div = document.createElement('div');
+  div.id = id;
+  div.style.display = 'none';
+  div.innerHTML = content;
+  return div;
+}
+
 function getData(url) {
   var xhr = new XMLHttpRequest();
   xhr.open('GET', url, true);
@@ -22,53 +34,68 @@ function getData(url) {
 
 // this function prints the data to the HTML page.
 function handleData(response) {
-  var sheetDataElement = document.getElementById("sheetData");
+  const container = document.getElementById('sheetData');
 
   response.forEach(function(item) {
     // Create a new <li> element
-    var listItem = document.createElement("div");
+    
+    const id = generateUniqueId();
+    const button = document.createElement('button');
+    button.className = 'popup-button';
+    // button.textContent = "Wish";
+    // button.onclick = () => openPopup(id);
+    button.setAttribute('data-target', id);
 
-    // Iterate over the keys of the object
-    Object.keys(item).forEach(function(key) {
-      // Create a new <div> element for each key-value pair
-      var divKeyValue = document.createElement("div");
-      // Set class name as the key
-      divKeyValue.className = key;
-      // Set innerHTML as the value
-      divKeyValue.innerHTML = item[key];
+    console.log(id);
+    console.log(item.message);
 
-      // divKeyValue.style.display="none";
-      // Append the <div> element for the key-value pair to the <li> item
-      listItem.appendChild(divKeyValue);
-    });
-
-    var imageDiv = document.createElement("div");
+    const contentDiv = createContentDiv(item.message, id);
     let img = document.createElement('img');
     img.src="star.gif"
-    imageDiv.className = "star";
-    listItem.appendChild(img);
+    img.onclick = () => openPopup(id);
+    button.appendChild(img);
 
     var height = screen.height - 100;
     var width = screen.width - 100;
-    listItem.style.position = "absolute";
+    button.style.position = "absolute";
 
     var left_width = (Math.floor(Math.random() * width) );
     var top_width = (Math.floor(Math.random() * height) );
 
-    listItem.style.left = left_width + 'px';
-    listItem.style.top = top_width + 'px';
-
-    listItem.className = "wish";
-
-
-
-    // Append the <li> element to the "sheetData" element
-    sheetDataElement.appendChild(listItem);
+    button.style.left = left_width + 'px';
+    button.style.top = top_width + 'px';
+    
+    container.appendChild(button);
+    container.appendChild(contentDiv);
   });
+
 }
 
+function openPopup(targetId) {
+  const contentDiv = document.getElementById(targetId);
+  console.log(targetId);
 
-// Example usage:
+  if (contentDiv) {
+      const width = 400;
+      const height = 300;
+      const screenWidth = window.innerWidth;
+      const screenHeight = window.innerHeight;
+      const left = Math.random() * (screenWidth - width - 100) + 50;
+      const top = Math.random() * (screenHeight - height - 100) + 50;
+      const windowFeatures = `width=${width},height=${height},left=${Math.round(left)},top=${Math.round(top)},scrollbars=yes,resizable=yes`;
+      
+      const popupWindow = window.open('', '', windowFeatures);
+
+      popupWindow.document.open();
+      popupWindow.document.write('<html><head><title>wish</title><link rel="stylesheet" href="wish.css"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet"</head><body><div class="container"><div>');
+      popupWindow.document.write(contentDiv.innerHTML);
+      popupWindow.document.write('</div></div></body></html>');
+      popupWindow.document.close();
+  } else {
+      console.error('Content div not found:', targetId);
+  }
+}
+
 getData(AppScriptUrl);
 
 
