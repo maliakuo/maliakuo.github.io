@@ -5,7 +5,11 @@
     font-weight: 400;
     font-style: normal;
    }
-   
+  
+.ul_list {
+    text-align: left;
+}  
+
 .heading {
     font-size: 3.5rem;
 }
