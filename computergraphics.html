@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="shortcut icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="shortcut icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <title>Computer Graphics</title>
+</head>
+<body>  
+    <header class="header">
+        <div class="name_container">
+            <div id="name">
+                <a href="index.html">Malia Kuo</a> | Computer Graphics
+            </div>
+            <button type="button" data-theme-toggle aria-label="Change to light theme">
+                <img id="buttonImg" src="favicon-16x16.png">
+            </button>
+        </div>
+        
+        <div class="nav_bar bottom_border">
+            <a href="index.html#projects">Projects</a>
+            <a href="index.html#art">Art</a>
+        </div>
+    </header>
+    <main>
+        <p>At Lucasfilm, my main project focused on MaterialX, which is an open source software used to render many materials, regardless of their rendering environment or implementation. Specifically, I worked in two MaterialX subprojects - MaterialX Lama and OpenPBR.</p>
+        <p><a class="link_underline" href="https://github.com/mkuo-lucasfilm" target="_blank">See my lucasfilm github for the actual code behind this work!</a></p>
+        <section>
+            <p class="title">MaterialX Lama</p>
+            <p>MaterialX Lama is a state-of-the-art material layering system, developed at ILM and used within Pixar Renderman. At the time of my project, MaterialX Lama within MaterialX hadn't been updated since 2021. My work clarified the future of MaterialX Lama and harmonized well with an active collaboration between Lucasfilm/ILM and Pixar.</p>
+            <p><i>What I Did:</i></p>
+            <ul>
+                <li>Developed two new Lama nodes based off the Pixar Renderman definitions - LamaGeneralizedSchlick and LamaIridescence.</li>
+                <li>Updated the rest of the Lama suite definitions to be consistent with Renderman deefault values and definitions</li>
+            </ul>
+            <p><i>LamaGeneralizedSchlick and LamaIridescence</i></p>
+            <div class="project_grid">
+                <img class="images" src="media/matx/LamaGeneralizedSchlick_2.png">
+                <img class="images" src="media/matx/LamaIridescence_2.png">
+            </div>
+            <p><i>Entire Lama Suite Updated</i></p>
+            <div class="project_grid">
+                <img class="images" src="media/matx/LamaGeneralizedSchlick_2.png">
+                <img class="images" src="media/matx/LamaIridescence_2.png">
+                <img class="images" src="media/matx/LamaConductor_2.png">
+                <img class="images" src="media/matx/LamaDiffuse_2.png">
+                <img class="images" src="media/matx/LamaSheen_2.png">
+                <img class="images" src="media/matx/LamaSSS_2.png">
+            </div>
+        </section>
+        <section>
+            <p class="title">OpenPBR and Standard Surface - Shader Translation</p>
+            <p>OpenPBR is a new shading model (essentially used to model many different types of materials) developed by Adobe, Autodesk, and MaterialX - it was released recently in 2023. Standard Surface is also a shading model, but was developed by Autodesk and has been around for awhile. These two implementations differ in their implementations of physically based properties, such as coat, metal, and sheen. As a result, translating from one shading model to another requires some thought to reach visual parity</p>
+            <p>The idea of <i>Shader Translation</i> from Standard Surface to OpenPBR is that users interested in OpenPBR can translate assets created in Standard Surface to OpenPBR. The reverse translation is useful for users who want to participate in OpenPBR but are using versions of MaterialX that don't have OpenPBR.</p>
+            <p><i>Standard Surface -> OpenPBR Shader Translation</i></p>
+            </div>
+            <p><i>Example 1: copper (standard surface) translated to copper (openPBR)</i></p>
+            <div class="project_grid">
+                <img class="images" src="media/matx/standard_surface_copper.png">
+                <img class="images" src="media/matx/standard_surface_copper_open_pbr.png">
+            </div>
+            <p><i>Example 2: brass (standard surface) translated to brass (openPBR)</i></p>
+            <div class="project_grid">
+                <img class="images" src="media/matx/standard_surface_brass.png">
+                <img class="images" src="media/matx/standard_surface_brass_open_pbr.png">
+            </div>
+            <p><i>Example 3: thin film (standard surface) translated to thin film (openPBR)</i></p>
+            <div class="project_grid">
+                <img class="images" src="media/matx/standard_surface_thin_film.png">
+                <img class="images" src="media/matx/standard_surface_thin_film_open_pbr.png">
+            </div>
+            <p><i>OpenPBR->Standard Surface Shader Translation</i></p>
+            </div>
+            <p><i>Example 1: default (openPBR) translated to default (standard surface)</i></p>
+            <div class="project_grid">
+                <img class="images" src="media/matx/open_pbr_default.png">
+                <img class="images" src="media/matx/open_pbr_default_ss.png">
+            </div>
+            <p><i>Example 2: carpaint (openPBR) translated to carpaint (standard surface)</i></p>
+            <div class="project_grid">
+                <img class="images" src="media/matx/open_pbr_carpaint.png">
+                <img class="images" src="media/matx/open_pbr_carpaint_ss_3.png">
+            </div>
+            <p><i>Example 2: glass (openPBR) translated to glass (standard surface)</i></p>
+            <div class="project_grid">
+                <img class="images" src="media/matx/open_pbr_glass.png">
+                <img class="images" src="media/matx/open_pbr_glass_ss.png">
+            </div>
+            <p><i>Example 3: ketchup (openPBR) translated to ketchup (standard surface)</i></p>
+            <div class="project_grid">
+                <img class="images" src="media/matx/open_pbr_ketchup.png">
+                <img class="images" src="media/matx/open_pbr_ketchup_ss_3.png">
+            </div>
+            <p><i>Example 4: pearl (openPBR) translated to pearl (standard surface)</i></p>
+            <div class="project_grid">
+                <img class="images" src="media/matx/open_pbr_pearl.png">
+                <img class="images" src="media/matx/open_pbr_pearl_ss_3.png">
+            </div>
+            <p><i>Reflections:</i></p>
+            <ul>
+                <li>As an initial pass, this made great progress in helping users try out the new shading model OpenPBR.</li>
+                <li>The two shading models differ in their implementation of coat, where OpenPBR allows the coat to influence the color and roughness of layers beneath, while standard surface generally doesn't take this approach. As a result, there's just some natural difference when it comes to examples with coat! It will be exciting to see how the shader translation graphs grow and evolve to become more accurate over time.</li>
+            </ul>
+        </section>
+    </main>
+    <footer class="foot nav_bar top_border">
+        <a href="https://github.com/maliakuo" target="_blank">Github</a>
+        <a href="https://www.linkedin.com/in/maliakuo/" target="_blank">LinkedIn</a>
+    </footer>
+  <script src="index.js"></script>
+</body>
+</html>

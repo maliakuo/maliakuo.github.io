@@ -1,0 +1,81 @@
+* {
+  font-family: "Source Code Pro", monospace;
+  color: white;
+}
+
+body {
+  background-color: black;
+  background-image: url("sparklingsky.gif");
+}
+
+fieldset {
+  border: 1px solid black;
+  margin: 0px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+img{
+  max-width: 50%;
+  max-height: 50%
+}
+
+label {
+  display: block;
+}
+
+li {
+  margin-bottom: 1em;
+}
+
+textarea {
+  color: black;
+}
+
+.honeypot-field {
+  display: none;
+}
+
+.form-elements {
+  border: 1px solid black;
+}
+
+.Timestamp {
+  display: none;
+}
+
+button {
+  color: black;
+}
+
+.name {
+  display: none;
+}
+
+.message {
+  display: none;
+}
+
+.popup-button {
+  height: 20vh;
+  width: 20vh;
+  border: none;
+  background: transparent;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.popup-button img {
+  width: 100%; /* Adjust size as needed */
+  height: auto;
+  transition: transform 0.3s ease; /* Smooth transition for size change */
+}
+
+.popup-button:hover img {
+  transform: scale(1.2); /* Scale up the image by 20% on hover */
+}
+
+.video {
+  height: 0;
+  width: 0;
+}

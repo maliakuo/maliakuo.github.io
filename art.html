@@ -1,206 +1,128 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Malia Kuo</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="shortcut icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="shortcut icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://use.typekit.net/sst7lxa.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  </head>
-  <body>
-    <ul class="nav justify-content-end">
-        <li class="nav-item">
-          <a class="nav-link" href="index.html">home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="projects.html">projects</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://github.com/maliakuo" target="_blank">github</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="https://www.linkedin.com/in/maliakuo/" target="_blank">linkedin</a>
-        </li>
-    </ul>
-
-    <div class="container text-left">
-        <div class="row">
-            <h1 class="heading">animations and illustrations</h1>
-            <p>A collection of my favorite animations and illustrations from the last four years.</p>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <title>Art</title>
+</head>
+<body>  
+    <header class="header">
+        <div class="name_container">
+            <div id="name">
+                <a href="index.html">Malia Kuo</a> | Art
+            </div>
+            <button type="button" data-theme-toggle aria-label="Change to light theme">
+                <img id="buttonImg" src="favicon-16x16.png">
+            </button>
         </div>
-
-        <div class="row section_div">
-            <div class="col">
-                <h2>Collage Animation, Spring 2023</h2>
-                <p class="subheading">collage, Procreate</p>
-                <div class="row align-items-center">
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" width="560" height="315" src="https://youtube.com/embed/TQHIuc4izXo?si=61xX8MeKqFhXWQ9F" title="collage animation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        
+        <div class="nav_bar bottom_border">
+            <a href="index.html#projects">Projects</a>
+            <a href="index.html#art">Art</a>
+        </div>
+    </header>
+    <main>
+        <p>A collection of my favorite animations and illustrations from the last four years.</p>
+        <section>
+            <div class="project_grid art_specific">
+                <div class="art_single">
+                    <div>
+                        <p class="title">Collage Animation, Spring 2023</p>
+                        <p><i>collage, Procreate</i></p>
                     </div>
+                    <iframe class="embed-responsive-item" width="560" height="315" src="https://youtube.com/embed/TQHIuc4izXo?si=61xX8MeKqFhXWQ9F" title="collage animation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>
-            </div>
-
-            <div class="col">
-                <h2>Ocean Animation, Spring 2023</h2>
-                <p class="subheading">film, marker</p>
-                <div class="row align-items-center">
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" width="560" height="315" src="https://youtube.com/embed/bMKhH21r_is?feature=share" title="ocean animation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <div class="art_single">
+                    <div>
+                        <p class="title">Ocean Animation, Spring 2023</p>
+                        <p><i>film, marker</i></p>
                     </div>
+                    <iframe class="embed-responsive-item" width="560" height="315" src="https://youtube.com/embed/bMKhH21r_is?feature=share" title="ocean animation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="art_single">
+                    <div>
+                        <p class="title">World 1, Spring 2024</p>
+                        <p><i>chalk pastel, gouache, colored pencil</i></p>
+                    </div>
+                    <img class="images standard_img " src="media/art/world1.JPG">
+                </div>
+                <div class="art_single">
+                    <div>
+                        <p class="title">World 2, Spring 2024</p>
+                        <p><i>chalk pastel, gouache, colored pencil</i></p>
+                    </div>
+                    <img class="images standard_img " src="media/art/world2.JPG">
+                </div>
+                <div class="art_single">
+                    <div>
+                        <p class="title">World 3, Spring 2024</p>
+                        <p><i>chalk pastel, gouache, colored pencil</i></p>
+                    </div>
+                    <img class="images standard_img " src="media/art/world3.JPG">
+                </div>
+                <div class="art_single">
+                    <div>
+                        <p class="title">World 4, Spring 2024</p>
+                        <p><i>chalk pastel, gouache, colored pencil</i></p>
+                    </div>
+                    <img class="images standard_img " src="media/art/world4.JPG">
+                </div>
+                <div class="art_single">
+                    <div>
+                        <p class="title">World 5, Spring 2024</p>
+                        <p><i>chalk pastel, gouache, colored pencil</i></p>
+                    </div>
+                    <img class="images standard_img " src="media/art/world5.JPG">
+                </div>
+                <div class="art_single">
+                    <div>
+                        <p class="title">Attune Cover, Spring 2021</p>
+                        <p><i>Procreate</i></p>
+                    </div>
+                    <img class="images standard_img " src="media/art/Attune.png">
+                </div>
+                <div class="art_single">
+                    <div>
+                        <p class="title">Taiyaki, Spring 2023</p>
+                        <p><i>Procreate</i></p>
+                    </div>
+                    <img class="images standard_img " src="media/art/taiyaki.jpeg">
+                </div>
+                <div class="art_single">
+                    <div>
+                        <p class="title">Portrait, Spring 2022</p>
+                        <p><i>acrylic paint, pastels</i></p>
+                    </div>
+                    <img class="images standard_img " src="media/art/portrait.JPG">
+                </div>
+                <div class="art_single">
+                    <div>
+                        <p class="title">Flowers, Spring 2022</p>
+                        <p><i>Procreate</i></p>
+                    </div>
+                    <img class="images standard_img " src="media/art/origamiflower.jpeg">
+                </div>
+                <div class="art_single">
+                    <div>
+                        <p class="title">Consciousness, Spring 2023</p>
+                        <p><i>chinecolle print</i></p>
+                    </div>
+                    <img class="images standard_img " src="media/art/stream.JPG">
                 </div>
             </div>
-        </div>
-
-        <br>
-        <div class="row section_div">
-            <div class="row">
-                <div class="col-3 side_div">
-                    <h2>Sunfish, Spring 2023</h2>
-                    <p class="subheading">chinecolle print</p>
-                </div>
-                <div class="col-3 side_div">
-                    <h2>Stream of Consciousness, Spring 2023</h2>
-                    <p class="subheading">chinecolle print</p>
-                </div>
-                <div class="col-3 side_div">
-                    <h2>Fish-Eye, Spring 2023</h2>
-                    <p class="subheading">chinecolle print</p>
-                </div>
-                <div class="col-3">
-                    <h2>GoldFish, Spring 2023</h2>
-                    <p class="subheading">chinecolle print</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-3 side_div">
-                    <img src="img/prints/fishprint.JPG" class="img-fluid" alt="sunfish">
-                </div>
-                <div class="col-3 side_div">
-                    <img src="img/prints/stream.JPG" class="img-fluid" alt="stream of consciousness">
-                </div>
-                <div class="col-3 side_div">
-                    <img src="img/prints/fisheye.JPG" class="img-fluid" alt="fish-eye">
-                </div>
-                <div class="col-3">
-                    <img src="img/prints/goldfish.JPG" class="img-fluid" alt="goldfish">
-                </div>
-            </div>
-        </div>
-
-        <br>
-        <div class="row section_div">
-            <div class="row">
-                <div class="col-3 side_div">
-                    <h2>Attune cover, Spring 2021</h2>
-                    <p class="subheading">Procreate</p>
-                </div>
-                <div class="col-3 side_div">
-                    <h2>in wait, Spring 2023</h2>
-                    <p class="subheading">Procreate</p>
-                </div>
-                <div class="col-3 side_div">
-                    <h2>YDN Mag AAPI Cover, Spring 2021</h2>
-                    <p class="subheading">Procreate</p>
-                </div>
-                <div class="col-3">
-                    <h2>taiyaki poster, Spring 2023</h2>
-                    <p class="subheading">Procreate</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-3 side_div">
-                    <img src="img/dig/Attune.png" class="img-fluid" alt="attune">
-                </div>
-                <div class="col-3 side_div">
-                    <img src="img/dig/fairy.png" class="img-fluid" alt="in wait">
-                </div>
-                <div class="col-3 side_div">
-                    <img src="img/dig/asia.jpeg" class="img-fluid" alt="aapi cover">
-                </div>
-                <div class="col-3">
-                    <img src="img/dig/taiyaki.jpeg" class="img-fluid" alt="taiyaki">
-                </div>
-            </div>
-        </div>
-
-        <br>
-        <div class="row section_div">
-            <div class="row">
-                <div class="col-4 side_div">
-                    <h2>Portrait of a Childhood Best Friend, Spring 2022</h2>
-                    <p class="subheading">acrylic paint, pastels</p>
-                </div>
-                <div class="col-4 side_div">
-                    <h2>Origami Flowers, Spring 2022</h2>
-                    <p class="subheading">acrylic paint</p>
-                </div>
-                <div class="col-4">
-                    <h2>toast, Spring 2023</h2>
-                    <p class="subheading">charcoal</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-4 side_div">
-                    <img src="img/trad/portrait.JPG" class="img-fluid" alt="portrait">
-                </div>
-                <div class="col-4 side_div">
-                    <img src="img/trad/origamiflower.jpeg" class="img-fluid" alt="origami flowers">
-                </div>
-                <div class="col-4">
-                    <img src="img/trad/toast.JPG" class="img-fluid" alt="toast">
-                </div>
-            </div>
-        </div>
-
-        <br>
-        <div class="row section_div">
-          <h2>Walking through Japanese Mythology, Fall 2023</h2>
-          <p>The mythology of Amaterasu through animation.</p>
-
-          <div class="row align-items-center">
-            <div class="col">
-                <h4>birth of amaterasu</h4>
-                <div class="embed-responsive embed-responsive-1by1">
-                    <video controls="" class="" loop="" autoplay="" height="560" width="560">
-                        <source src="img/myth/amaterasu.mp4">
-                    </video>
-                </div>
-            </div>
-            <div class="col">
-                <h4>amaterasu and the cave</h4>
-                <div class="embed-responsive embed-responsive-1by1">
-                    <video controls="" class="" loop="" autoplay="" height="560" width="560">
-                        <source src="img/myth/cave.mov">
-                    </video>
-                </div>
-            </div>
-            <div class="col">
-                <h4>amaterasu and the eight fold mirror</h4>
-                <div class="embed-responsive embed-responsive-1by1">
-                    <video controls="" class="" loop="" autoplay="" height="560" width="560">
-                        <source src="img/myth/mirror.mov">
-                    </video>
-                </div>
-            </div>
-            <div class="col">
-                <h4>amaterasu and the heavenly blade</h4>
-                <div class="embed-responsive embed-responsive-1by1">
-                    <video controls="" class="" loop="" autoplay="" height="560" width="560">
-                        <source src="img/myth/blade.mov">
-                    </video>
-                </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-  </body>
+        </section>
+    </main>
+    <footer class="foot nav_bar top_border">
+        <a href="https://github.com/maliakuo" target="_blank">Github</a>
+        <a href="https://www.linkedin.com/in/maliakuo/" target="_blank">LinkedIn</a>
+    </footer>
+  <script src="index.js"></script>
+</body>
 </html>

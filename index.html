@@ -1,51 +1,129 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Malia Kuo</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="shortcut icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="shortcut icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://use.typekit.net/sst7lxa.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  </head>
-  <body>
-    <ul class="nav justify-content-end">
-        <li class="nav-item">
-          <a class="nav-link" href="index.html">home</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="projects.html">projects</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://github.com/maliakuo" target="_blank">github</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="https://www.linkedin.com/in/maliakuo/" target="_blank">linkedin</a>
-          </li>
-    </ul>
-
-    <div class="container text-center">
-        <div class="row align-items-center">
-            <div class="col">
-                <h2>my personal portfolio</h2>
-                <p>hi! i’m malia and i’m studying computer science and studio art at Yale (set to graduate December 2024). i’ve explored computer graphics, augmented/virtual realities, web development, graphic design, and creative embedded systems.</p
-                <p>previous software engineer experience at:</p>   
-                <ul class="ul_list">
-                  <li>Lucasfilm Advanced Development Group (computer graphics and UI/UX design/frontend web development) -- see my <a href="https://github.com/mkuo-lucasfilm" target="_blank">lucasfilm github</a> for MaterialX open source contributions</li>
-                  <li>Walt Disney Animation Studios (UI/UX design/frontend web development)</li>
-                </ul>
-                <p><b>click on the museum illustration to view personal projects</b></p>
-                </div>
-          <div class="col">
-            <a href="projects.html"><img src="img/museum.jpeg" alt="malia's museum"></a>
-          </div>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <title>Malia Kuo</title>
+</head>
+<body>  
+    <header class="header">
+        <div class="name_container">
+            <div id="name">
+                <a href="index.html">Malia Kuo</a>
+            </div>
+            <button type="button" data-theme-toggle aria-label="Change to light theme">
+                <img id="buttonImg" src="favicon-16x16.png">
+            </button>
         </div>
-    </div>
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-  </body>
+        
+        <div class="nav_bar bottom_border">
+            <a href="#projects">Projects</a>
+            <a href="#art">Art</a>
+        </div>
+    </header>
+    <main>
+        <div class="horiz_layout">
+            <section>
+                <p>Hey! I'm a software engineer, UI/UX designer, and illustrator. I'm currently finishing my degree in Computing and the Arts at Yale (graduating December 2024). I love to mess around at the intersection of art and software and tell stories.</p>
+                <p>Work Experience:</p>
+                <ul>
+                    <li class="li_item"><i>Software Engineer Intern @ Lucasfilm</i> |  
+                        <i>June 2024-Aug 2024</i><br>
+                        
+                        --> computer graphics and UI/UX design/frontend web development <br>
+                        --> see my <a class="link_underline" href="https://github.com/mkuo-lucasfilm" target="_blank">lucasfilm github</a> for MaterialX open source contributions
+                    </li> 
+                    <li class="li_item"><i>Software Engineer Intern @ Walt Disney Animation Studios</i> | <i>May 2023-Aug 2023</i><br>
+                    --> UI/UX design/frontend web development
+                    </li>
+                    <li class="li_item"><i>Summer Undergraduate Research Fellow @ Mayo Clinic</i> | <i>May 2022-Aug 2022</i></li>
+                    <li class="li_item"><i>Journalism Fellow @ Yale Internal Medicine</i> | <i>May 2021-Aug 2021</i></li>
+                </ul>
+                <section>
+                    <p class="skills"><i>Languages: </i>C/C++, Python, JavaScript/HTML/CSS, TypeScript, Swift</p>
+                    <p class="skills"><i>Frameworks: </i>React.js, Node.js, Next.js, Processing, p5.js, GitHub</p>
+                    <p class="skills"><i>Design: </i>Figma, Adobe Creative Suite, Canva, Procreate</p>
+                    <p class="skills"><i>Research: </i>PowerPoint, Word, Excel, SPSS, Google Suite</p>
+                </section>
+            </section>
+            <aside role="img" aria-label="illustration of personalized museum map">
+                <img id="museum" src="media/map.jpeg">
+            </aside>
+        </div>
+        <section id="projects">
+            <p class="title">Projects</p>
+            <div class="project_grid">
+                <div class="project_div">
+                    <p class="project_header">Computer Graphics</p>
+                    <ul>
+                        <li>Developed new MaterialX Lama shader definitions (LamaIridescence and LamaGeneralizedSchlick) to enhance cross-company synergy with Pixar RenderMan Lama.</li>
+                        <li>Pioneered bidirectional MaterialX shader translation graphs between OpenPBR and Standard Surface to facilitate users to test out OpenPBR and support OpenPBR in applications using an earlier version of MaterialX.</li>
+                    </ul>
+                    <a class="link_underline" href="computergraphics.html" target="_blank">See specific examples and workflow here.</a>
+                </div>
+                <div class="project_div">
+                    <p class="project_header">UX Design and Frontend Web Development</p>
+                    <ul>
+                        <li>Designed and implemented new user interfaces for internal Lucasfilm websites, with a focus on accessibility.</li>
+                    </ul>
+                    <a class="link_underline" href="frontend.html" target="_blank">See specific examples and workflow here.</a>
+                </div>
+                <div class="project_div">
+                    <p class="project_header">Creative Embedded Systems</p>
+                    <ul>
+                        <li>Engineered interactive art pieces through the use of microprocessors, distributed sensor networks, IoT, and intermedia systems.</li>
+                        <li>Specifically, created a shadow box escape room, a touch-based and environment-sensitive lego city, an ambient-light and interactive fractal art piece, and a two-person, remote-controlled memory game.</li>
+                    </ul>
+                    <a class="link_underline" href="ces.html" target="_blank">See specific examples and workflow here.</a>
+                </div>
+                <div class="project_div">
+                    <p class="project_header">Ambient Internet</p>
+                    <ul>
+                        <li>Designed and programmed sites which consider the interactive and performative potential of the web.</li>
+                        <li>Selected projects include "Sky Full of Wishes," which allows users to peruse submitted wishes and submit their own (powered with Google CMS). "Tool for One" is a mobile-only web application which allows my friend to ascertain her current location in relation to the many different places she calls home - it takes in the phone's gyroscope and location data to point her to whichever location she chooses.</li>
+                    </ul>
+                    <a class="link_underline" href="ambientinternet.html" target="_blank">See specific examples and workflow here.</a>
+                </div>
+                <div class="project_div">
+                    <p class="project_header">Augmented Realities</p>
+                    <ul>
+                        <li>Explored the potential of augmented reality in the art world, examining how digital worlds can interact with and extend existing pieces.</li>
+                    </ul>
+                    <a class="link_underline" href="ar.html" target="_blank">See specific examples and workflow here.</a>
+                </div>
+            </div>
+        </section>
+        <section id="art">
+            <p class="title">Art</p>
+            <div class="project_grid">
+                <div class="project_div">
+                    <p class="project_header">Animations and Illustrations</p>
+                    <ul>
+                        <li>Created multiple illustrations, paintings, and animations during my time at Yale</li>
+                    </ul>
+                    <a class="link_underline" href="art.html" target="_blank">See portfolio here.</a>
+                </div>
+                <div class="project_div">
+                    <p class="project_header">Graphic Design</p>
+                    <ul>
+                        <li>Designed and laid out over fifty layouts for the Yale Scientific Magazine during my tenure as Production Manager</li>
+                    </ul>
+                    <a class="link_underline" href="graphicdesign.html" target="_blank">See chosen works here.</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="foot nav_bar top_border">
+        <a href="https://github.com/maliakuo" target="_blank">Github</a>
+        <a href="https://www.linkedin.com/in/maliakuo/" target="_blank">LinkedIn</a>
+    </footer>
+  <script src="index.js"></script>
+</body>
 </html>

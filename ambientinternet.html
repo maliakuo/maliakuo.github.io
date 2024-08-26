@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="shortcut icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="shortcut icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <title>Ambient Internet</title>
+</head>
+<body>  
+    <header class="header">
+        <div class="name_container">
+            <div id="name">
+                <a href="index.html">Malia Kuo</a> | Ambient Internet
+            </div>
+            <button type="button" data-theme-toggle aria-label="Change to light theme">
+                <img id="buttonImg" src="favicon-16x16.png">
+            </button>
+        </div>
+        
+        <div class="nav_bar bottom_border">
+            <a href="index.html#projects">Projects</a>
+            <a href="index.html#art">Art</a>
+        </div>
+    </header>
+    <main>
+        <p>Designed and programmed sites which consider the interactive and performative potential of the web. Just for fun!</p>
+        <section>
+            <p class="title">Sky Full of Wishes (HTML/CSS/JS)</p>
+            <div class="project_grid">
+                <img class="images" src="media/ambient/wishes.png">
+                <div>
+                    <p><i>Concept: </i>Site that allows users to peruse submitted wishes and submit their own (powered with Google CMS)</p>
+                    <p><i>What I learned: </i>Using Google CMS as a backend, parsing through data, popups as part of the site</p>
+                    <p><i>Future changes: </i>Fix collisions of wishes (build out a more robust backend)</p>
+                    <a class="link_underline" href="https://github.com/maliakuo/interactivedesign/tree/main/interactivedesign/wishes" target="_blank">Github</a>
+                    <a class="link_underline" href="ambient/toolforone/index.html" target="_blank">Link to site</a>
+                </div>
+            </div>
+        </section>
+        <section>
+            <p class="title">Tool for One (HTML/CSS/JS)</p>
+            <div class="project_grid">
+                <img class="images" src="media/ambient/toolforone.png">
+                <div>
+                    <p><i>Concept: </i>Mobile-only web application which allows my friend to ascertain her current location in relation to the many different places she calls home - it takes in the phone's gyroscope and location data to point her to whichever location she chooses. Essentially, a compass app but just for her.</p>
+                    <p><i>What I learned: </i>How to use phone's internal sensors in a web app</p>
+                    <p><i>Future changes: </i>Allow friend to add more homes</p>
+                    <a class="link_underline" href="https://github.com/maliakuo/interactivedesign/tree/main/interactivedesign/toolforone" target="_blank">Github</a>
+                    <a class="link_underline" href="ambient/wishes/index.html" target="_blank">Link to site</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="foot nav_bar top_border">
+        <a href="https://github.com/maliakuo" target="_blank">Github</a>
+        <a href="https://www.linkedin.com/in/maliakuo/" target="_blank">LinkedIn</a>
+    </footer>
+  <script src="index.js"></script>
+</body>
+</html>
