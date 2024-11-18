@@ -1,5 +1,5 @@
 * {
-    font-family: "Source Code Pro", monospace;
+    font-family: "Work Sans", monospace;
 }
 
 [data-theme="light"] {
@@ -25,7 +25,7 @@ footer {
 }
 
 main {
-    padding: 1em 0;
+    padding: 1em 20em;
 }
  
 button {
@@ -162,10 +162,22 @@ a:hover {
         grid-template-columns: 1fr;
     }
 
+    main {
+        padding: 1em 0;
+    }
+
     #museum {
         display: none;
         /* max-width: 80%;
         height: auto;
         width: auto\9;  */
     }
+}
+
+@media only screen and (min-width: 1050px){
+    
+    main {
+        padding: 1em 10em;
+    }
+
 }
