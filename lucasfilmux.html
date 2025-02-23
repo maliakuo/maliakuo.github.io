@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="shortcut icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="shortcut icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Pixelify+Sans:wght@400..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Lucasfilm UX Tweaks</title>
+</head>
+<body>  
+    <header class="header">
+        <div class="name_container">
+            <div id="name">
+                <a href="index.html">Malia Kuo</a> | Lucasfilm UX Tweaks
+            </div>
+            <button type="button" data-theme-toggle aria-label="Change to light theme">
+                <img id="buttonImg" src="favicon-16x16.png">
+            </button>
+        </div>
+        
+        <div class="nav_bar bottom_border">
+            <a href="index.html#projects">Projects</a>
+            <a href="index.html#art">Art</a>
+        </div>
+    </header>
+    <main>
+        <p>During my Lucasfilm internship, I also helped redesign and implement frontend improvements to production websites using Figma, TypeScript, React, and Next.js.</p>
+
+        <p class="title">Website 1: Redesigning Submission Results Page</p>
+        <div class="subproject">
+            <section>
+                <div class="project_grid">
+                    <img class="images" src="media/submissions/initial_id.PNG">
+                    <div>
+                        <p><i>Concept: </i>The first website I worked on enabled producers to review and edit takes in production environments. I was tasked with redesigning the submissions page, which is where the website would navigate to after the producers have submitted their takes.</p>
+                        <i>Issues:</i>
+                        <ul>
+                            <li>Multiple pages contain overlapping information, including status, id, and takes</li>
+                            <li>Unclear exact purpose of submit button</li>
+                            <li>Pull request never shown in the rest of the site</li>
+                            <li>List layout looked messy</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <p class="title">Figma Mockup</p>
+                <div class="project_grid">
+                    <img class="images" src="media/submissions/figma.PNG">
+                    <div>
+                        <p><i>Redesign Part One</i></p>
+                        <ul>
+                            <li>Combined the information into a single table</li>
+                            <li>Moved the submit button to the specific row in the table, which would be submitted (also renamed the button to "submit to farm" to make more understandable)</li>
+                            <li>Renamed title to "Submissions"</li>
+                        </ul>
+    
+                        <p><i>Feedback and Redesign Part Two</i></p>
+                        <ul>
+                            <li>The product manager liked the designs, but explained to me that one submission may include multiple sets of takes, each of which would have a different render ID and submissions stuatus.</li>
+                            <li>I knew that I wanted to keep the information on a single page and in a tabular format. Because render ID and submission status would be individual to each take within a submission, I extracted those into a sub table within the main submissions table.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <p class="title">Implementation</p>
+                <div class="project_grid">
+                    <img class="images" src="media/submissions/final_closed.PNG">
+                    <div>
+                        <p>After confirming my updated design with the product manager, I implemented the changes in the website using TypeScript and Tailwind. The website is now used in production with my designs!</p>
+                    </div>
+                </div>
+                <div class="project_grid">
+                    <img class="images" src="media/submissions/final_open.PNG">
+                </div>
+            </section>
+        </div>
+
+        <p class="title">Website 2: Color Accessibility and Header Redesign</p>
+        <div class="subproject">
+            <section>
+                <div class="project_grid">
+                    <img class="images" src="media/color/initial.PNG">
+                    <div>
+                        <p><i>Concept: </i>The second website I worked on was used to visualize a job's status in being rendered. Initially, I was tasked with just updating the header. However, after opening the site, I realized there were some problems with color accessibility for the site and asked to help out with that as well!</p>
+                        <i>Issues:</i>
+                        <ul>
+                            <li>Header formatting could use a pass to highlight useful information about the render job and user</li>
+                            <li>Colors aren't consistent with web accessibility standards</li>
+                            <li>Tooltip when hovering over nodes was ill-formatted (no background, just pure white text), overlapping with the nodes above it. Sorry I don't have an image :(</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <p class="title">Figma Mockup</p>
+                <div class="project_grid">
+                    <img class="images" src="media/color/color_prop.png">
+                    <div>
+                        <p>Here I mainly focused on creating a color palette that aligned with web accessibility standards. (first is original, second is my proposal)</p>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <p class="title">Implementation</p>
+                <div class="project_grid">
+                    <img class="images" src="media/color/final_user.PNG">
+                    <div>
+                        <p>After confirming my updated design with the product manager, I implemented the changes in the website using TypeScript and Tailwind. The website is now used in production with my designs!</p>
+                    </div>
+                </div>
+                <div class="project_grid">
+                    <img class="images" src="media/color/final_tooltip.PNG">
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="foot nav_bar top_border">
+        <a href="https://github.com/maliakuo" target="_blank">Github</a>
+        <a href="https://www.linkedin.com/in/maliakuo/" target="_blank">LinkedIn</a>
+    </footer>
+  <script src="index.js"></script>
+</body>
+</html>
