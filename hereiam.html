@@ -1,74 +1,108 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="shortcut icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="shortcut icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="projstyles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Pixelify+Sans:wght@400..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <title>Here I Am</title>
+    <title>here i am</title>
 </head>
-<body>  
-    <header class="header">
-        <div class="name_container">
-            <div id="name">
-                <a href="index.html">Malia Kuo</a> | Here I Am
-            </div>
-            <button type="button" data-theme-toggle aria-label="Change to light theme">
-                <img id="buttonImg" src="favicon-16x16.png">
-            </button>
-        </div>
-        
-        <div class="nav_bar bottom_border">
-            <a href="index.html#projects">Projects</a>
-            <a href="index.html#art">Art</a>
-        </div>
-    </header>
-    <main>
-        <p>For my senior project, designed a real-time collaborative, audio-visual collaging website using web-sockets.</p>
-        <section>
-            <p class="title">The Installation, Nov 2024</p>
-            <div class="project_grid">
-                <iframe class="embed-responsive-item" width="560" height="315" src="https://drive.google.com/file/d/1C7xG3f8b2uo79leMbtvdH9A5TDNYkd4R/preview" title="hereiam" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                <div>
-                    <p><i>tv, stickers, postcards, iphones</i></p>
-                    <p>Through this project, I wanted to bring in the community and collaborative aspect of collage, spinning the prototypical idea of a personal journal into a more ephemeral, interactive, and unexpected piece.</p>
-                    <p>Participants can connect to this digital canvas by scanning a QR code on their phones, which allows them to add and manipulate gifs to create a constantly changing, audio-visual installation.</p>
-                </div>
-            </div>
-        </section>
-        <section>
-            <p class="title">Digital Canvas</p>
-            <div class="project_grid">
-                <img class="images" src="media/hereiam/hereiam_home.png">
-                <div>
-                    <p>If no users have interacted with the site yet, this is the landing page! It sends users to the QR code link and constantly populates and depopulates the page with random gifs, so that the site lives and changes on its own.</p>
-                </div>
-            </div>
-        </section>
-        <section>
-            <p class="title">Picking a sprite</p>
-            <div class="project_grid">
-                <img class="images" src="media/hereiam/phones.png">
-                <div>
-                    <p>The QR codes leads to the page on the left, where participants can select any sprite (out of over 50!) to place on the canvas.</p>
+<body>
 
-                    <p>Once a user clicks on a sprite, they're taken to the page on the right. The sprite will automatically be seen on the canvas, and here, the users can manipulate how it looks and sounds. For instance, they can move it vertically and horizontally across the canvas, flip the gif, play its sound, etc.</p>
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer class="foot nav_bar top_border">
-        <a href="https://github.com/maliakuo" target="_blank">Github</a>
-        <a href="https://www.linkedin.com/in/maliakuo/" target="_blank">LinkedIn</a>
-    </footer>
-  <script src="index.js"></script>
+<div class="wrapper">
+  <div class="hero">
+        <div class="section_container">
+            <p class="socials"><a class="internship_details socials" href="./index.html" target="_blank">Home</a> <span class="internship_details socials">||</span> <a class="internship_details socials" href="https://www.linkedin.com/in/maliakuo/" target="_blank">LinkedIn</a> <span class="internship_details socials">||</span> <a class="internship_details socials" href="https://github.com/maliakuo" target="_blank">GitHub</a></p>
+        </div>
+        <video autoplay muted loop playsinline>
+            <source src="./media/hereiam/demo.mp4" type="video/mp4">
+        </video>
+  </div>
+  <div class="title_card">
+    	<p><i>Here I Am</i></p>
+        <p class="description">Designed a real-time, audiovisual collage installation that invites collaboration.</p>
+        <div class="tags">
+            <div class="tag">product design</div>
+            <div class="tag">full stack</div>
+            <div class="tag">installation</div>
+        </div>
+  </div>
+</div>
+    <div class="proj_info">
+        <div class="section_title">Concept</div>
+        <div class="col1">Through this project, I wanted to bring in the community and collaborative aspect of collage, spinning the prototypical idea of a personal journal into a more ephemeral, interactive, and unexpected piece.</div>
+        <div class="col2">Participants can connect to this digital canvas by scanning a QR code on their phones, which allows them to add and manipulate gifs to create a constantly changing, audio-visual installation.</div>
+    </div>
+    <div class="full_width_img">
+        <img src="./media/hereiam/hero.png" alt="landing">
+    </div>
+    <div class="proj_info">
+        <div class="section_title">Design</div>
+        <div class="col1">Inspired by the idea of the old internet, I wanted to create a world reminiscent of sites like coolmathgames and myspace, where I first experienced the playfulness of the web.</div>
+        <div class="col2 hide">
+            <img src="./media/hereiam/planet.gif" alt="planet">
+        </div>
+        <div class="col1">
+            <img src="./media/hereiam/frog.gif" alt="frog">
+        </div>
+        <div class="col2">I chose GIFs as the primary element for the canvas because of their pixelated nostalgia and their connection to the charm of the early internet. The background is inspired by the checkered transparency of a PNG, reinforcing the idea that this site is a limitless creative space—just like a PNG where layers of elements can be freely added and arranged.</div>
+    </div>
+    <div class="proj_info">
+        <div class="section_title">Homepage (Digital Canvas)</div>
+        <div class="col1">If no users have interacted with the site yet, this is the landing page! It sends users to the QR code link and constantly populates and depopulates the page with random gifs.</div>
+        <div class="col2">The site lives and changes on its own.</div>
+    </div>
+    <div class="full_width_img">
+        <video autoplay muted loop playsinline>
+            <source src="./media/hereiam/homepage.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="proj_info">
+        <div class="section_title">User Interaction</div>
+        <div class="col1">The user is meant to interact with the site on their phone, like a mobile game. Participants can select any sprite (out of over 50!) to place on the canvas.</div>
+        <div class="col2">
+            <video autoplay muted loop playsinline>
+                <source src="./media/hereiam/sprite_page.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="col1">The sprite will automatically be manifested on the canvas, and on the sprite controller page, the users can manipulate how it looks and sounds. For instance, they can move it vertically and horizontally across the canvas, flip the gif, play its sound, etc.</div>
+        <div class="col2">
+            <video autoplay muted loop playsinline>
+                <source src="./media/hereiam/controller.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+    <div class="proj_info">
+        <div class="section_title">Installation</div>
+        <div class="col1">TV, stickers, postcards, and a QR code invite passersby to interact with the site.</div>
+        <div class="col2"></div>
+        <div class="media_container"">
+            <img src="./media/hereiam/installation.JPG" alt="inst_1">
+            <img src="./media/hereiam/installation_ppl.JPG" alt="inst_2">
+            <video autoplay muted loop playsinline>
+                <source src="./media/hereiam/one_user.mp4" type="video/mp4">
+            </video>
+            <video autoplay muted loop playsinline>
+                <source src="./media/hereiam/two_users.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+    <div class="proj_info">
+        <div class="section_title">Links</div>
+        <div class="col1">You can try it out yourself with just your phone and a laptop!</div>
+        <div class="col2"></div>
+        <div class="col1"><i>open canvas on laptop: </i><a href="https://hereiam.glitch.me/world" target="_blank">canvas link</a></div>
+        <div class="col2"></div>
+        <div class="col2"><i>open qr code on mobile: </i><a href="https://hereiam.glitch.me" target="_blank">sprites link</a></div>
+        <div class="col2"></div>
+        <div class="col1"><i>github repo: </i><a href="https://github.com/maliakuo/collageArt" target="_blank">repo link</a></div>
+    </div>
+
+
 </body>
 </html>
+
+

@@ -1,0 +1,242 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    color: #5f5f5f;
+  }
+  
+html, body {
+    height: 100%; /* Ensure full height */
+}
+
+body {
+    background-image: 
+        radial-gradient(#D9D9D9 5%, transparent 5%),
+        radial-gradient(#D9D9D9 5%, transparent 5%);
+    background-color: #FCFBF8;
+    background-position: 0 0, 25px 25px;
+    background-size: 25px 25px;
+}
+
+.wrapper {
+    margin: 0 auto;
+}
+  
+.wrapper > div {
+    padding: 1rem;
+}
+  
+.hero {
+    grid-area: hero;
+}
+.title_card {
+    grid-area: tc;
+}
+.text {
+    grid-area: text;
+}
+  
+.wrapper {
+    display: grid;
+    height: 100vh; /* Make the wrapper fill the viewport height */
+    grid-auto-rows: 1fr; /* Make rows stretch equally */  
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.5fr;
+    grid-template-areas:
+      "hero"
+      "tc";
+}
+
+.proj_info, .group_info {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 0;
+    padding: 1rem;
+}
+
+.col1, .col2 {
+    font-size: 0.67rem;
+    max-width: 40ch;
+    padding-top: 0.5rem;
+}
+
+.col1 video, .col2 video {
+    max-height: 400px;
+    width: auto;
+    object-fit: cover;
+}
+
+.col1 img, .col2 img {
+    max-height: 400px;
+    width: auto;
+    object-fit: cover;
+}
+
+.col1 a, .col2 a, .col1 i, .col2 i, .col1 p, .col2 p {
+    font-size: 0.67rem;
+}
+
+.left, .right {
+    font-size: 0.8em;
+    max-width: 40ch;
+    padding-top: 0.5rem;
+}
+
+.left img, .right img,
+.left video, .right video,
+.left iframe, .right iframe {
+    width: 100%;
+    height: auto;         /* maintains aspect ratio */
+    object-fit: cover;
+    max-width: 600px;    /* prevents media from getting too wide */
+}
+
+/* For iframes specifically */
+.left iframe, .right iframe {
+    aspect-ratio: 16/9;  /* maintains video aspect ratio */
+}
+
+.left a, .right a, .left i, .right i, .left p, .right p {
+    font-size: 0.8em;
+}
+
+.section_container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    position: relative;
+    z-index: 1;
+}
+
+.socials {
+    font-size: 0.8em;
+}
+
+.vert_container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.media_container {
+    padding-top: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.media_container img, .media_container video {
+    max-height: 400px;
+    width: auto;
+    object-fit: cover;
+}
+
+.full_width_img {
+    padding: 1rem;  /* makes image span full width */
+    width: 100%;
+    max-width: 1200px;    /* prevents image from getting too wide */
+}
+
+.full_width_img img {
+    width: 100%;
+    height: auto;         /* maintains aspect ratio */
+    object-fit: contain;
+    max-height: 800px;
+}
+
+.full_width_img video {
+    width: 100%;
+    height: auto;         /* maintains aspect ratio */
+    object-fit: cover;
+}
+
+.full_width_img p, .full_width_img i {
+    font-size: 0.67rem;
+    padding-bottom: 0.5rem;
+}
+
+.section_title {
+    color: #598538;
+    padding-bottom: 0!important;
+    padding-top: 0!important;
+}
+
+.hide {
+    display: none;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.hero video, .hero img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.description {
+    font-size: 2rem;
+}
+
+.tags {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    margin-top: 0.5em;
+}
+
+.tag {  
+    padding: 0.25em;
+    border-radius: 2em;
+    background-color: #59853830;
+    font-size: 0.8em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+.dark_bg a, .dark_bg i, .dark_bg span {
+    color: #FCFBF8;
+}
+  
+@media (min-width: 60em) {
+    .proj_info {
+        grid-template-columns: 1fr 1fr;
+        max-width: 60%;
+        column-gap: 1.5rem;
+    }
+
+    .group_info {
+        grid-template-columns: 0.75fr 1fr;
+        max-width: 90%;
+        column-gap: 1.5rem;
+    }
+
+    .section_title, .full_width_img {
+        grid-column: 1 / span 2;
+    }
+
+    .hide {
+        display: block;
+    }
+
+    .media_container {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+}
+@media (min-width: 75em) {
+
+}
+  

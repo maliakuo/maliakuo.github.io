@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="shortcut apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="shortcut icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="shortcut icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="stylesheet" href="projstyles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Pixelify+Sans:wght@400..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>materialX shaders</title>
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="hero">
+            <div class="section_container dark_bg">
+                <p class="socials"><a class="internship_details socials" href="./index.html" target="_blank">Home</a> <span class="internship_details socials">||</span> <a class="internship_details socials" href="https://www.linkedin.com/in/maliakuo/" target="_blank">LinkedIn</a> <span class="internship_details socials">||</span> <a class="internship_details socials" href="https://github.com/maliakuo" target="_blank">GitHub</a></p>
+            </div>
+            <img src="./media/matx/lama.png" alt="landing">
+        </div>
+        <div class="title_card">
+            <p><i>MaterialX</i></p>
+            <p class="description">Created advanced shaders and shader translation graphs for MaterialX, an open-source rendering standard.</p>
+            <div class="tags">
+                <div class="tag">computer graphics</div>
+                <div class="tag">open source</div>
+            </div>
+        </div>
+    </div>
+    <div class="proj_info">
+        <div class="section_title">Background</div>
+        <div class="col1">During my Lucasfilm internship, I worked on MaterialX, an open-source framework for rendering materials across different environments and implementations.</div>
+        <div class="col2">I specifically contributed to two MaterialX subprojects—MaterialX Lama and OpenPBR.</div>
+    </div>
+    <div class="proj_info">
+        <div class="section_title">MaterialX Lama</div>
+        <div class="col1">MaterialX Lama is a state-of-the-art material layering system, developed at ILM and used in Pixar RenderMan. By the time of my project, its MaterialX integration hadn’t been updated since 2021. My work clarified its future direction and aligned with ongoing collaboration between Lucasfilm/ILM and Pixar.</div>
+        <div class="col2">I developed two new Lama nodes—LamaGeneralizedSchlick and LamaIridescence—based on Pixar RenderMan definitions. Additionally, I updated the entire Lama suite to match RenderMan's default values and definitions for consistency.</div>
+        <div class="col1"><i>LamaGeneralizedSchlick and LamaIridescence</i></div>
+        <div class="col2"></div>
+        <div class="left">
+            <img src="./media/matx/LamaGeneralizedSchlick_2.png" alt="LamaGeneralizedSchlick">
+        </div>
+        <div class="right">
+            <img src="./media/matx/schlick_graph.png" alt="schlick graph">
+        </div>
+        <div class="left">
+            <img src="./media/matx/LamaIridescence_2.png" alt="LamaIridescence">
+        </div>
+        <div class="right">
+            <img src="./media/matx/irid_graph.png" alt="iridescence graph">
+        </div>
+    </div>
+    <div class="full_width_img">
+        <p><i>updated Lama suite</i></p>
+        <img src="./media/matx/updated_lama.png" alt="updated lama">
+    </div>
+    <div class="proj_info">
+        <div class="section_title">OpenPBR</div>
+        <div class="col1">OpenPBR is a new shading model developed by Adobe, Autodesk, and MaterialX, released in 2023. In contrast, Standard Surface, developed by Autodesk, has been widely used for some time. These models differ in their implementations of physically based properties like coat, metal, and sheen, making direct translation between them a challenge in achieving visual parity.</div>
+        <div class="col2">To bridge this gap, I developed shader translation and reverse shader translation graphs to convert assets between Standard Surface and OpenPBR. This allows users to adopt OpenPBR while maintaining compatibility with assets created in Standard Surface, and vice versa for those using older MaterialX versions that don’t yet support OpenPBR.</div>
+    </div>
+    <div class="proj_info">
+        <div class="section_title">standard surface -> openPBR (goal: visual parity)</div>
+        <div class="col1"><i>copper (standard surface) translated to copper (openPBR)</i></div>
+        <div class="col2"></div>
+        <div class="left">
+            <img src="./media/matx/standard_surface_copper.png" alt="standard surface copper">
+        </div>
+        <div class="right">
+            <img src="./media/matx/standard_surface_copper_open_pbr.png" alt="openPBR copper">
+        </div>
+        <div class="col1"><i>brass (standard surface) translated to brass (openPBR)</i></div>
+        <div class="col2"></div>
+        <div class="left">
+            <img src="./media/matx/standard_surface_brass.png" alt="standard surface brass">
+        </div>
+        <div class="right">
+            <img src="./media/matx/standard_surface_brass_open_pbr.png" alt="openPBR brass">
+        </div>
+        <div class="col1"><i>thin film (standard surface) translated to thin film (openPBR)</i></div>
+        <div class="col2"></div>
+        <div class="left">
+            <img src="./media/matx/standard_surface_thin_film.png" alt="standard surface thin film">
+        </div>
+        <div class="right">
+            <img src="./media/matx/standard_surface_thin_film_open_pbr.png" alt="openPBR thin film">
+        </div>
+    </div>
+    <div class="proj_info">
+        <div class="section_title">openPBR -> standard surface (goal: visual parity)</div>
+        <div class="col1"><i>default (openPBR) translated to default (standard surface)</i></div>
+        <div class="col2"></div>
+        <div class="left">
+            <img src="./media/matx/open_pbr_default.png" alt="default openPBR">
+        </div>
+        <div class="right">
+            <img src="./media/matx/open_pbr_default_ss.png" alt="default standard surface">
+        </div>
+        <div class="col1"><i>carpaint (openPBR) translated to carpaint (standard surface)</i></div>
+        <div class="col2"></div>
+        <div class="left">
+            <img src="./media/matx/open_pbr_carpaint.png" alt="carpaint openPBR">
+        </div>
+        <div class="right">
+            <img src="./media/matx/open_pbr_carpaint_ss_3.png" alt="carpaint standard surface">
+        </div>
+        <div class="col1"><i>glass (openPBR) translated to glass (standard surface)</i></div>
+        <div class="col2"></div>
+        <div class="left">
+            <img src="./media/matx/open_pbr_glass.png" alt="glass openPBR">
+        </div>
+        <div class="right">
+            <img src="./media/matx/open_pbr_glass_ss.png" alt="glass standard surface">
+        </div>
+        <div class="col1"><i>ketchup (openPBR) translated to ketchup (standard surface)</i></div>
+        <div class="col2"></div>
+        <div class="left">
+            <img src="./media/matx/open_pbr_ketchup.png" alt="ketchup openPBR">
+        </div>
+        <div class="right">
+            <img src="./media/matx/open_pbr_ketchup_ss_3.png" alt="ketchup standard surface">
+        </div>
+        <div class="col1"><i>pearl (openPBR) translated to pearl (standard surface)</i></div>
+        <div class="col2"></div>
+        <div class="left">
+            <img src="./media/matx/open_pbr_pearl.png" alt="pearl openPBR">
+        </div>
+        <div class="right">
+            <img src="./media/matx/open_pbr_pearl_ss_3.png" alt="pearl standard surface">
+        </div>
+    </div>
+    <div class="proj_info">
+        <div class="section_title">Links</div>
+        <div class="col1">Check out my specific contributions to MaterialX!</div>
+        <div class="col2"></div>
+        <div class="col1"><i>github: </i><a href="https://github.com/mkuo-lucasfilm" target="_blank">link</a></div>
+        <div class="col2"></div>
+    </div>
+</body>
+</html>
+
+

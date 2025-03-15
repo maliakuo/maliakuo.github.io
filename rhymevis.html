@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="shortcut apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="shortcut icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="shortcut icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="stylesheet" href="projstyles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Pixelify+Sans:wght@400..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>rhyme vis</title>
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="hero">
+            <div class="section_container">
+                <p class="socials"><a class="internship_details socials" href="./index.html" target="_blank">Home</a> <span class="internship_details socials">||</span> <a class="internship_details socials" href="https://www.linkedin.com/in/maliakuo/" target="_blank">LinkedIn</a> <span class="internship_details socials">||</span> <a class="internship_details socials" href="https://github.com/maliakuo" target="_blank">GitHub</a></p>
+            </div>
+            <img src="./media/rhymevis/rhyme_nodes.png" alt="landing">
+        </div>
+        <div class="title_card">
+            <p><i>Rhyme Visualization</i></p>
+            <p class="description">Built a visualization tool that maps rhyme patterns with interactive node-link diagrams.</p>
+            <div class="tags">
+                <div class="tag">data vis</div>
+                <div class="tag">custom tool</div>
+            </div>
+        </div>
+    </div>
+    <div class="proj_info">
+        <div class="section_title">Concept</div>
+        <div class="col1">Few tools exist to visualize poetry, making rhyme an exciting frontier for data visualization. This project helps users instantly grasp a poet’s most common phoneme endings, detect imperfect rhymes, and explore word connections across an entire corpus.</div>
+        <div class="col2">Users can click on phoneme groups to explore detailed visualizations, where nodes represent rhymed words and links connect rhyming lines. I analyzed two poet datasets—Shakespeare’s sonnets and Alexander Pope’s couplets—chosen for their distinct styles and eras, demonstrating how rhyme structures vary across literary traditions.</div>
+    </div>
+    <div class="full_width_img">
+        <img src="./media/rhymevis/rhyme_nodes.png" alt="landing">
+    </div>
+    <div class="proj_info">
+        <div class="section_title">Implementation</div>
+        <div class="col1">Creating this tool required data cleaning using python scripts and was ultimately implemented in D3.js, a data visualization software.</div>
+        <div class="col2"></div>
+    </div>
+    <div class="proj_info">
+        <div class="section_title">Homepage</div>
+        <div class="col1">The main page displays all rhymed phoneme groups, sorted by the number of nodes. Users can interact with the diagrams by dragging nodes or hovering to reveal corresponding words. </div>
+        <div class="col2">The network visualization maps the topography of a poet’s rhymes, instantly highlighting patterns and drawing attention to rhymed outliers.</div>
+    </div>
+    <div class="full_width_img">
+        <img src="./media/rhymevis/site.png" alt="site">
+    </div>
+    <div class="proj_info">
+        <div class="section_title">Details Page</div>
+        <div class="col1">Every phoneme group, when clicked, has an associated detailed, quantitative view for each phoneme group, expanding its node size and displaying all nodes, their frequencies, and every link. This addressed key limitations of the main visualization:</div>
+        <div class="col2">To keep diagrams readable, I capped node sizes at 10 on the main page, even for high-frequency words. The detailed view resolves this by explicitly listing all node frequencies. Some words rhymed frequently, creating multiple links that HTML tooltips couldn’t fully display. The detailed view solves this by listing all links within each phoneme group.</div>
+    </div>
+    <div class="full_width_img">
+        <img src="./media/rhymevis/details.png" alt="details">
+    </div>
+    <div class="proj_info">
+        <div class="section_title">Links</div>
+        <div class="col1">Check it out yourself!</div>
+        <div class="col2"></div>
+        <div class="col1"><i>Shakespeare: </i><a href="https://rhymevis.glitch.me" target="_blank">link</a></div>
+        <div class="col2"></div>
+        <div class="col2"><i>Alexander Pope: </i><a href="https://rhymevis.glitch.me/pope.html" target="_blank">link</a></div>
+        <div class="col2"></div>
+        <div class="col1"><i>repo: </i><a href="https://glitch.com/~rhymevis" target="_blank">link</a></div>
+    </div>
+</body>
+</html>
+
+

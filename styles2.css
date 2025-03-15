@@ -1,0 +1,208 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+  }
+  
+html, body {
+    height: 100%; /* Ensure full height */
+}
+
+body {
+    background-image: 
+        radial-gradient(#D9D9D9 5%, transparent 5%),
+        radial-gradient(#D9D9D9 5%, transparent 5%);
+    background-color: #FCFBF8;
+    background-position: 0 0, 25px 25px;
+    background-size: 25px 25px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+  
+.wrapper {
+/* border: 2px solid #f76707;
+border-radius: 5px;
+background-color: #fff4e6; */
+    margin: 0 auto;
+}
+  
+.wrapper > div {
+/* border: 2px solid #ffa94d;
+border-radius: 5px;
+background-color: #ffd8a8; */
+    padding: 1em;
+/* color: #d9480f; */
+}
+  
+  .left_side {
+    grid-area: ls;
+  }
+  .right_side {
+    grid-area: rs;
+  }
+  .collage {
+    grid-area: col;
+  }
+  .biography {
+    grid-area: bio;
+  }
+  .internships {
+    grid-area: intern;
+  }
+  .work {
+    grid-area: work;
+  }
+  .projects {
+    grid-area: proj;
+  }
+  .art {
+    grid-area: art;
+  }
+  
+  
+  
+  .wrapper {
+    display: grid;
+    height: 100vh; /* Make the wrapper fill the viewport height */
+    grid-auto-rows: 1fr; /* Make rows stretch equally */  
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+      "ls"
+      "rs";
+  }
+  
+  .left_side {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.25fr;
+    grid-template-areas:
+      "col"
+      "bio";
+  }
+  
+  .right_side {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 1em;
+    grid-template-areas:
+      "intern"
+      "work";
+  }
+  
+  .work {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 1em;
+    grid-template-areas:
+      "proj"
+      "art";
+  }
+
+.collage {
+    grid-area: col;
+    position: relative; 
+    overflow: hidden;
+}
+
+.collage-image {
+    position: absolute;
+    width: 20%;
+    height: auto;
+}
+
+#fishes {
+    width: 80%;
+    top: 1em;
+    left: 1.4em;
+}
+
+#redblob {
+    width: 90%;
+    top: -1.5em;
+    left: 0.75em;
+}
+
+#yellowblob {
+    width: 50%;
+    top: 1em;
+    left: 1.25em;
+}
+
+.bottom-right {
+    bottom: 0;
+    right: 0;
+}
+  
+.biography {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-self: end;
+}
+
+.section_container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    position: relative;
+    z-index: 1;
+}
+
+.section_title {
+    font-size: 2em;
+    margin: 0;
+}
+
+.internship_details {
+    font-size: 0.67em;
+}
+
+.biography, .biography a {
+    color: #FF5500;
+}
+.internships, .internships a {
+    color: #2C78D0;
+}
+.projects, .projects a {
+    color: #598538;
+}
+.art, .art a {
+    color: #c64f9c;
+}
+.socials, .socials a {
+    color: #5f5f5f;
+}
+
+#name_title {
+    font-size: 4em;
+}
+  
+  @media (min-width: 60em) {
+    .wrapper {
+      grid-template-columns: 0.65fr 1fr;
+      grid-template-areas:
+        "ls rs";
+    }
+  }
+  @media (min-width: 75em) {
+    .wrapper {
+      grid-template-areas:
+        "ls rs";
+    }
+    .work {
+        column-gap: 1.5em;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        "proj art";
+    }
+  }
+  

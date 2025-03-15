@@ -1,147 +1,87 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html>
 <head>
-    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="shortcut icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="shortcut icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles2.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Pixelify+Sans:wght@400..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Malia Kuo</title>
 </head>
-<body>  
-    <header class="header">
-        <div class="name_container">
-            <div id="name">
-                <a href="index.html">Malia Kuo</a>
+<body>
+    <div class="wrapper">
+        <div class="left_side">
+            <div class="collage">
+                <div class="section_container">
+                    <p class="socials"><a class="internship_details socials" href="https://www.linkedin.com/in/maliakuo/" target="_blank">LinkedIn</a> <span class="internship_details socials">||</span> <a class="internship_details socials" href="https://github.com/maliakuo" target="_blank">GitHub</a></p>
+                </div>
+                <img src="media/collage/yellowblob.png" alt="yellowblob" class="collage-image" id="yellowblob">
+                <img src="media/collage/fishes.png" alt="fishes" class="collage-image" id="fishes">
+                <img src="media/collage/redblob.png" alt="redblob" class="collage-image" id="redblob">
             </div>
-            <button type="button" data-theme-toggle aria-label="Change to light theme">
-                <img id="buttonImg" src="favicon-16x16.png">
-            </button>
+            <div class="biography">
+                <p id="name_title">Malia Kuo</p>
+                <p>is a developer, designer, and doodler. She’s just graduated from Yale with a degree in Computer Science and Graphic Design.</p>
+            </div>
         </div>
-        
-        <div class="nav_bar bottom_border">
-            <a href="#projects">Projects</a>
-            <a href="#art">Art</a>
-        </div>
-    </header>
-    <main>
-        <div class="horiz_layout">
-            <section>
-                <p>Hey! I'm a software engineer, UI/UX designer, and illustrator. I just graduated with my degree in Computing and the Arts at Yale (December 2024). I love to mess around at the intersection of art and software and tell stories.</p>
-                <p>Work Experience:</p>
-                <ul>
-                    <li class="li_item">Software Engineer Intern @ <i>Lucasfilm</i> |  
-                        <i>June 2024-Aug 2024</i><br>
-                        
-                        --> computer graphics and UI/UX design/frontend web development <br>
-                        --> see my <a class="link_underline" href="https://github.com/mkuo-lucasfilm" target="_blank">lucasfilm github</a> for MaterialX open source contributions
-                    </li> 
-                    <li class="li_item">Frontend Engineer Intern @ <i>Walt Disney Animation Studios</i> | <i>May 2023-Aug 2023</i><br>
-                    --> UI/UX design/frontend web development
-                    </li>
-                    <li class="li_item">Summer Undergraduate Research Fellow @ <i>Mayo Clinic</i> | <i>May 2022-Aug 2022</i></li>
-                    <li class="li_item">Journalism Fellow @ <i>Yale Internal Medicine</i> | <i>May 2021-Aug 2021</i></li>
-                </ul>
-                <section>
-                    <p class="skills"><i>Languages: </i>Python, JavaScript/HTML/CSS, TypeScript</p>
-                    <p class="skills"><i>Frameworks: </i>React.js, Node.js, Next.js, d3.js, p5.js, GitHub</p>
-                    <p class="skills"><i>Design: </i>Figma, Adobe Creative Suite, Canva, Procreate</p>
-                    <p class="skills"><i>Research: </i>PowerPoint, Word, Excel, SPSS, Google Suite</p>
-                </section>
-            </section>
-            <aside role="img" aria-label="illustration of personalized museum map">
-                <img id="museum" src="media/map.jpeg">
-            </aside>
-        </div>
-        <section id="projects">
-            <p class="title">Projects</p>
-            <div class="project_grid">
-                <div class="project_div">
-                    <p class="project_header">Rhyme Visualization</p>
-                    <ul>
-                        <li>Built an interactive rhyme visualization tool that allows users to view node-link diagrams of a poet’s rhymed words in their corpus, grouped by phoneme</li>
-                        <li>Written in D3.js and vanilla HTML/CSS</li>
-                    </ul>
-                    <a class="link_underline" href="rhymevisualization.html" target="_blank">See specific examples and workflow here.</a>
+        <div class="right_side">
+            <div class="section_container internships">
+                <p class="section_title">work exp</p>
+                <div class="internship_container">
+                    <p class="internship_title">lucasfilm, <i>software engineering intern</i></p>
+                    <p class="internship_details">-> open source computer graphics, UI/UX development</p>
                 </div>
-                <div class="project_div">
-                    <p class="project_header">Here I Am</p>
-                    <ul>
-                        <li>For my senior project, designed a real-time collaborative, audio-visual collaging website using web-sockets.</li>
-                    </ul>
-                    <a class="link_underline" href="hereiam.html" target="_blank">See specific examples and workflow here.</a>
+                <div class="internship_container">
+                    <p class="internship_title">walt disney animation studios, <i>frontend engineering intern</i></p>
+                    <p class="internship_details">-> ux research and design, frontend development</p>
                 </div>
-                <div class="project_div">
-                    <p class="project_header">Computer Graphics</p>
-                    <ul>
-                        <li>Developed new MaterialX Lama shader definitions (LamaIridescence and LamaGeneralizedSchlick) to enhance cross-company synergy with Pixar RenderMan Lama.</li>
-                        <li>Pioneered bidirectional MaterialX shader translation graphs between OpenPBR and Standard Surface to facilitate users to test out OpenPBR and support OpenPBR in applications using an earlier version of MaterialX.</li>
-                    </ul>
-                    <a class="link_underline" href="computergraphics.html" target="_blank">See specific examples and workflow here.</a>
+                <div class="internship_container">
+                    <p class="internship_title">mayo clinic, <i>summer research fellow</i></p>
+                    <p class="internship_details">-> drug diffusion method with fourier transform infrared tech</p>
                 </div>
-                <div class="project_div">
-                    <p class="project_header">Lucasfilm UX Tweaks</p>
-                    <ul>
-                        <li>Designed and implemented new user interfaces for internal Lucasfilm websites, with a focus on accessibility.</li>
-                    </ul>
-                    <a class="link_underline" href="lucasfilmux.html" target="_blank">See specific examples and workflow here.</a>
-                </div>
-                <div class="project_div">
-                    <p class="project_header">Creative Embedded Systems</p>
-                    <ul>
-                        <li>Engineered interactive art pieces through the use of microprocessors, distributed sensor networks, IoT, and intermedia systems.</li>
-                        <li>Specifically, created a shadow box escape room, a touch-based and environment-sensitive lego city, an ambient-light and interactive fractal art piece, and a two-person, remote-controlled memory game.</li>
-                    </ul>
-                    <a class="link_underline" href="ces.html" target="_blank">See specific examples and workflow here.</a>
-                </div>
-                <div class="project_div">
-                    <p class="project_header">Ambient Internet</p>
-                    <ul>
-                        <li>Designed and programmed sites which consider the interactive and performative potential of the web.</li>
-                        <li>Selected projects include "Sky Full of Wishes," which allows users to peruse submitted wishes and submit their own (powered with Google CMS). "Tool for One" is a mobile-only web application which allows my friend to ascertain her current location in relation to the many different places she calls home - it takes in the phone's gyroscope and location data to point her to whichever location she chooses.</li>
-                    </ul>
-                    <a class="link_underline" href="ambientinternet.html" target="_blank">See specific examples and workflow here.</a>
-                </div>
-                <div class="project_div">
-                    <p class="project_header">Augmented Realities</p>
-                    <ul>
-                        <li>Explored the potential of augmented reality in the art world, examining how digital worlds can interact with and extend existing pieces.</li>
-                    </ul>
-                    <a class="link_underline" href="ar.html" target="_blank">See specific examples and workflow here.</a>
+                <div class="internship_container">
+                    <p class="internship_title">yale internal medicine, <i>journalism fellow</i></p>
+                    <p class="internship_details">-> interview, illustrate articles</p>
                 </div>
             </div>
-        </section>
-        <section id="art">
-            <p class="title">Art</p>
-            <div class="project_grid">
-                <div class="project_div">
-                    <p class="project_header">Animations and Illustrations</p>
-                    <ul>
-                        <li>Created multiple illustrations, paintings, and animations during my time at Yale</li>
-                    </ul>
-                    <a class="link_underline" href="art.html" target="_blank">See portfolio here.</a>
+            <div class="work">
+                <div class="section_container projects">
+                    <p class="section_title">projects</p>
+                    <div class="internship_container">
+                        <p class="internship_title"><a href="hereiam.html" target="_blank">here i am</a></p>
+                        <p class="internship_details">-> a real-time collaborative, audio-visual collaging installation (website :))</p>
+                    </div>
+                    <div class="internship_container">
+                        <p class="internship_title"><a href="creativeembedded.html" target="_blank">creative embedded systems</a></p>
+                        <p class="internship_details">-> engineered interactive art pieces through the use of microprocessors, distributed sensor networks, IoT, and intermedia systems</p>
+                    </div>
+                    <div class="internship_container">
+                        <p class="internship_title"><a href="rhymevis.html" target="_blank">rhyme visualization tool</a></p>
+                        <p class="internship_details">-> interactive D3.js rhyme visualization tool of a poet’s rhymes in their corpus, grouped by phoneme</p>
+                    </div>
+                    <div class="internship_container">
+                        <p class="internship_title"><a href="shaders.html" target="_blank">materialX shaders</a></p>
+                        <p class="internship_details">-> developed new MaterialX Lama shader definitions and pioneered new shader translation graphs</p>
+                    </div>
                 </div>
-                <div class="project_div">
-                    <p class="project_header">Graphic Design</p>
-                    <ul>
-                        <li>Designed and laid out over fifty layouts for the Yale Scientific Magazine during my tenure as Production Manager</li>
-                    </ul>
-                    <a class="link_underline" href="graphicdesign.html" target="_blank">See chosen works here.</a>
+                <div class="section_container art">
+                    <p class="section_title">art & design</p>
+                    <div class="internship_container">
+                        <p class="internship_title">graphic design</p>
+                        <p class="internship_details">-> my favorite yale scientific magazine spreads, typography explorations, and other graphic design projects</p>
+                    </div>
+                    <div class="internship_container">
+                        <p class="internship_title">illustrations</p>
+                        <p class="internship_details">-> doodles, animations, drawings, etc.</p>
+                    </div>
                 </div>
             </div>
-        </section>
-    </main>
-    <footer class="foot nav_bar top_border">
-        <a href="https://github.com/maliakuo" target="_blank">Github</a>
-        <a href="https://www.linkedin.com/in/maliakuo/" target="_blank">LinkedIn</a>
-    </footer>
-  <script src="index.js"></script>
+        </div>
+    </div>
 </body>
 </html>
+
+
