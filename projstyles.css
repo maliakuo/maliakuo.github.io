@@ -191,7 +191,7 @@ body {
 }
 
 .description {
-    font-size: 2rem;
+    font-size: 1.5em;
 }
 
 .tags {
@@ -246,6 +246,10 @@ body {
 
     .media_container {
         grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .description {
+        font-size: 2em;
     }
 
 }
