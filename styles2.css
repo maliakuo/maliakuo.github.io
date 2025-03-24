@@ -201,15 +201,38 @@ background-color: #ffd8a8; */
 }
 
 #name_title {
-    font-size: 4em;
+    font-size: 2.5em;
 }
   
-  @media (min-width: 60em) {
+  @media (min-width: 45em) {
     .wrapper {
       grid-template-columns: 0.65fr 1fr;
       grid-template-areas:
         "ls rs";
     }
+
+    .right_side {
+      overflow-y: auto; /* Enable vertical scrolling */
+      max-height: 100vh; /* Limit height to viewport height */
+      padding-right: 1em; /* Add some padding for the scrollbar */
+      scrollbar-width: thin; /* For Firefox */
+      scrollbar-color: #5f5f5f #FCFBF8; /* For Firefox */
+  }
+
+    /* Webkit scrollbar styling (Chrome, Safari, newer Edge) */
+    .right_side::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    .right_side::-webkit-scrollbar-track {
+        background: #FCFBF8;
+    }
+
+    .right_side::-webkit-scrollbar-thumb {
+        background-color: #5f5f5f;
+        border-radius: 4px;
+    }
+
   }
   @media (min-width: 75em) {
     .wrapper {
@@ -221,6 +244,10 @@ background-color: #ffd8a8; */
         grid-template-columns: 1fr 1fr;
         grid-template-areas:
         "proj art";
+    }
+
+    #name_title {
+      font-size: 4em;
     }
   }
   
