@@ -80,3 +80,10 @@ button.addEventListener("click", (event) => {
 
     currentThemeSetting = newTheme;
 }); 
+
+let modImg = document.getElementById("modular_type")
+console.log(modImg)
+
+modImg.addEventListener("click", (event) => {
+  console.log("clicked it")
+}); 

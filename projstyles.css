@@ -49,7 +49,7 @@ body {
       "tc";
 }
 
-.proj_info, .group_info {
+.proj_info, .group_info, .gallery {
     display: grid;
     grid-template-columns: 1fr;
     row-gap: 0;
@@ -80,8 +80,15 @@ body {
 
 .left, .right {
     font-size: 0.8em;
-    max-width: 40ch;
     padding-top: 0.5rem;
+}
+
+.left {
+    max-width: 100ch;
+}
+
+.right {
+    max-width: 40ch;;
 }
 
 .left img, .right img,
@@ -221,6 +228,11 @@ body {
     .group_info {
         grid-template-columns: 0.75fr 1fr;
         max-width: 90%;
+        column-gap: 1.5rem;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
         column-gap: 1.5rem;
     }
 
